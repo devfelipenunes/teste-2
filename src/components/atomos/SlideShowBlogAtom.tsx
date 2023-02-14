@@ -1,16 +1,13 @@
-import React from "react";
 import "../../index.css";
-
-import { Slide } from "react-slideshow-image";
-
 import "react-slideshow-image/dist/styles.css";
 
-import { minorCardBlog } from "../../constants";
-
 import { TextAtom } from "./TextAtom";
+import { Slide } from "react-slideshow-image";
 import { BackgroundImageAtom } from "./BackgroundImageAtom";
+import { minorCardBlog } from "../../constants/index.js";
 
 export const SlideShowBlogAtom = () => {
+  console.log(minorCardBlog);
   return (
     <div
       className={
