@@ -1,6 +1,6 @@
 import { TextAtom } from "../atomos/TextAtom";
 import { CardTopPostsLG } from "./CardTopPostsLG";
-import { CardTopPostsInterface, CardTopPostsSM } from "./CardTopPostsSM";
+import { CardTopPostsSM } from "./CardTopPostsSM";
 
 import { featured } from "../../constants/Blog";
 
@@ -19,12 +19,11 @@ export function PostMainMolecule() {
           text="Nossas principais postagens"
         />
         <div className="sm:flex flex-col sm:mr-10 sm:justify-between h-[38.063rem]">
-          {featured.map((element: CardTopPostsInterface, index: number) => (
+          {featured.map((element, index) => (
             <CardTopPostsSM
               title={element.title}
               subtitle={element.subtitle}
               slug={element.slug}
-              text={""}
             />
           ))}
         </div>
